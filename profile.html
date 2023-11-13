@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- end fonts -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- end Font Awesome -->
+    <link rel="stylesheet" href="main-menu.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    
+    <div class="side-menu">
+        <a href="index.html" class="logobox">
+            <img src="logo.png" alt="">
+            <span class="site-title">Music App</span>
+        </a>
+
+        <div class="submenu">
+            <h3>MENU</h3>
+            <ul>
+                <li>
+                    <a href="explore.html#Explore"><i class="fas fa-icons"></i>Explore</a>
+                </li>
+                <li>
+                    <a href="explore.html#Albums"><i class="fas fa-compact-disc"></i>Albums</a>
+                </li>
+                <li>
+                    <a href="explore.html#Artists"><i class="fas fa-play"></i>Artists</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="submenu">
+            <h3>User</h3>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i>Profile</a>
+                </li>
+                <li>
+                    <a href="#Recent"><i class="fas fa-redo-alt"></i>Recent</a>
+                </li>
+                <li>
+                    <a href="#Favourites"><i class="fas fa-heart"></i>Favourites</a>
+                </li>
+            </ul>
+        </div>
+        <div class="submenu">
+        </div>
+        <div class="login-part">
+            <a class="login-button2" href="#">Log in</a>
+            <a class="login-button2" href="#">Sign up</a>
+        </div>
+    </div>
+
+
+    <div class="top-menu">
+        <div class="burger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+        <a href="index.html" class="logobox-top logobox">
+            <img src="logo.png" alt="">
+            <span class="site-title">Music App</span>
+        </a>
+        <form action="">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" class="search" placeholder="Type here to search">
+        </form>
+
+
+        <a class="login-button" href="#">Log in</a>
+        <a class="login-button" href="#">Sign up</a>
+    </div>
+
+    <div class="content">
+        <div class="prof-info">
+            <img class="img" src="profile.gif" alt="">
+            <h2>Lilia Mkoyan</h2>
+        </div>
+        
+        <div class="music-info-container" id="Recent"> 
+            <h3>Recent</h3>
+            <div class="music-container">
+                
+                <a class="music-disk" href="player.html">
+                    <img class="track-img" src="https://i.scdn.co/image/ab67616d0000b2731440ffaa43c53d65719e0150">
+                    <p>KORDHELL - Murder In My Mind</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="BMTH - AmEN!.png" alt="">
+                    <p>BMTH - AmEN!</p>
+                    
+                </a>
+                <a class="music-disk" href="player.html">
+                    <img src="BMTH - Sleepwalking.jpg" alt="">
+                    <p>BMTH - Sleepwalking</p>
+                    
+                </a>
+                <a class="music-disk" href="player.html">
+                    <img src="DVRST - Close Eyes.jpg" alt="">
+                    <p>DVRST - Close Eyes</p>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="music-info-container" id="Favourites"> 
+            <h3>Favourites</h3>
+            <div class="none-scroll-container ">
+
+                <a class="music-disk" href="player.html">
+                    <img class="track-img" src="https://i.scdn.co/image/ab67616d0000b2731440ffaa43c53d65719e0150">
+                    <p>KORDHELL - Murder In My Mind</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="BMTH - Can you feel my heart.jpg" alt="">
+                    <p>BMTH - Can You Feel My Heart</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="BMTH - AmEN!.png" alt="">
+                    <p>BMTH - AmEN!</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="BMTH - Sleepwalking.jpg" alt="">
+                    <p>BMTH - Sleepwalking</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="DVRST - Close Eyes.jpg" alt="">
+                    <p>DVRST - Close Eyes</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Narvent - Memory Reboot.jpg" alt="">
+                    <p>Narvent - Memory Reboot</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Deftones - My Own Summer.jpg" alt="">
+                    <p>Deftones - My Own Summer</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Arctic Monkeys - Why'd You Only Call Me When You're High.jpg" alt="">
+                    <p>Arctic Monkeys - Why'd You Only Call Me When You're High?</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Arctic Monkeys - Do I wanna know.jpg" alt="">
+                    <p>Arctic Monkeys - Do I Wanna Know?</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Arctic Monkeys - I Wanna Be Yours.jpg" alt="">
+                    <p>Arctic Monkeys - Wanna Be Yours</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Rammstein - Du Hast.jpg" alt="">
+                    <p>Rammstein - Du Hast</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Rammstein - Mein Herz Brent.jpg" alt="">
+                    <p>Rammstein - Mein Herz Brent</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Rammstein - Deutchland.jpg" alt="">
+                    <p>Rammstein - Deutchland</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Rammstein - Sonne.jpg" alt="">
+                    <p>Rammstein - Sonne</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Rammstein - Rosenrot.jpg" alt="">
+                    <p>Rammstein - Rosenrot</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier - Comparison.jpg" alt="">
+                    <p>Citizen Soldier - Comparison</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier - Never Ending Nightmare.jpg" alt="">
+                    <p>Citizen Soldier - Never Ending Nightmare</p>
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier.jpg" alt="">
+                    <p>Citizen Soldier - Alone with myself</p>    
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier - Talk Me Down.jpg" alt="">
+                    <p>Citizen Soldier - Talk Me Down</p>    
+                </a>
+
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier - Hope It Haunts You.jpg" alt="">
+                    <p>Citizen Soldier - Hope It Haunts You</p>    
+                </a>
+                
+                <a class="music-disk" href="player.html">
+                    <img src="Citizen Soldier - Mess of Me.jpg" alt="">
+                    <p>Citizen Soldier - Mess Of Me</p>    
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

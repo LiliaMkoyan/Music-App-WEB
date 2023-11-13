@@ -1,0 +1,230 @@
+.wallpaper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40%;
+    transition: all 0.5s ease;
+}
+
+.main  {
+    padding: 25px ;
+    
+}
+.main p {
+    margin-bottom:22px ;
+}
+
+.part, .part2{
+    position: relative;
+    z-index: 1;
+    margin: 150px  70px 0 325px ; 
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 0 30px 30px;
+    
+}
+.part2{
+    margin-top: 50px  !important; 
+}
+
+.part > h2{
+    color:#f8f8f8;
+    margin: 30px 0;
+}
+.part .albums {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap:10px;
+}
+.album{
+    display: block;
+    background: #000;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+.album > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+   transition: 0.1s ease;
+}
+.album:hover img{
+    opacity: 0.5;
+}
+.album > h3{
+    z-index: 1;
+    text-align: center;
+    background: #06060a;
+    width: 100%;
+   opacity: 0.8;
+    padding: 5px 0;
+}
+
+.part .artists{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    
+}
+.artist{
+    position: relative;
+    width: 180px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0 0;
+    background: #252525;
+    border-radius: 10px;
+    min-height: 220px;
+}
+.artist > img{
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: 0.2s ease-out;
+}
+.artist > h3{
+    font-size: 0.8rem;
+    margin: 5px;
+    text-align: center;
+    color: #f8f8f8;
+
+}
+
+.artist:hover  img{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:1200px){
+    .top-menu form{
+        width: 60%;
+    }
+    .wallpaper{
+       
+       width: 50%;
+      
+    }
+    .wallpaper > img{
+        object-position: -26cap;
+    }
+    .part .albums{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media only screen and (max-width:1400px){
+    .genres{
+        margin: 150px  70px 50px 325px ;
+    }
+    .genre-box{
+        width: calc(100% / 3.5)
+    }
+    .wallpaper{
+       
+        height: 100vh;
+        
+    }
+}
+
+@media only screen and (max-width:900px){
+    .part{
+        width: 80%;
+        margin: 150px auto 50px auto;
+        
+    }
+    
+}
+
+@media only screen and (max-width:670px){
+   
+    .part{
+        width: 90%;
+    }
+    .part .albums{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:550px){
+    .top-menu {
+        
+        grid-template-columns: 30px 70px auto ;
+        gap:8px;
+        
+    }
+    .login-button{
+        display: none;
+    }
+    .genre-box{
+        width: 45%;
+        gap:1%;
+    }
+    .login-part{
+        display: flex;
+    }
+    .wallpaper{
+        width: 80%;
+        height: 90vh;
+     }
+     .top-menu form{
+        width: 100%;
+     }
+    .part2{
+        padding: 10px;
+    }
+    .part2 > h2 {
+        padding-left: 30px;
+    }
+    .artists{
+        margin-bottom: 30px;
+    }
+    .artist{
+        position: relative;
+        width: 45%;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 0 0;
+        background: #252525;
+        border-radius: 10px;
+        min-height: 220px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1366px) and (orientation : portrait){
+    .wallpaper{
+        width: 70%;
+        height:80vh;
+         
+     }
+}
+/* Phone responsive 180- 768px*/
+@media only screen and (min-device-width : 180px) and (max-device-width :  767px) and (orientation : portrait) {
+    
+    
+    .wallpaper{
+        width: 90%;
+        height:80vh;
+         
+     }
+  
+}
