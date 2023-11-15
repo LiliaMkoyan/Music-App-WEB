@@ -26,7 +26,6 @@
 </head>
 
 <body>
-    
     <div class="side-menu">
         <a href="index.html" class="logobox">
             <img src="logo.png" alt="">
@@ -43,7 +42,7 @@
                     <a href="explore.html#Albums"><i class="fas fa-compact-disc"></i>Albums</a>
                 </li>
                 <li>
-                    <a href="explore.html#Artists"><i class="fas fa-play"></i>Artists</a>
+                    <a href="explore.html#Artists"><i class="fa-solid fa-headphones"></i>Artists</a>
                 </li>
             </ul>
         </div>
@@ -51,13 +50,27 @@
             <h3>User</h3>
             <ul>
                 <li>
-                    <a href="profile.html#recent"><i class="fas fa-user"></i>Profile</a>
+                    <a href="profile.html#Profile"><i class="fas fa-user"></i>Profile</a>
                 </li>
                 <li>
                     <a href="profile.html#Recent"><i class="fas fa-redo-alt"></i>Recent</a>
                 </li>
                 <li>
                     <a href="profile.html#Favourites"><i class="fas fa-heart"></i>Favourites</a>
+                </li>
+            </ul>
+        </div>
+        <div class="submenu">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>Mail</a>
                 </li>
             </ul>
         </div>
@@ -90,29 +103,29 @@
 
     <div class="content">
         <div class="audio-card">
-			<img class="track-img" src="https://i.scdn.co/image/ab67616d0000b2731440ffaa43c53d65719e0150">
-			<div class="details"> 
-				<h1 class="title">Murder In My Mind</h1>
-				<h3 class="author">KORDHELL</h3>
-			</div>
-			<div class="details">
-				<div class="audio-time">
-					<span class="progressing">00:00</span>
-					<span class="end-time">03:25</span>
-				</div>
-				<input type="range" id="seek-slider" max="100" value="0" name=""  onchange="seekTo()">
-			</div>
+            <img class="track-img" src="https://i.scdn.co/image/ab67616d0000b2731440ffaa43c53d65719e0150">
+            <div class="details">
+                <h1 class="title">Murder In My Mind</h1>
+                <h3 class="author">KORDHELL</h3>
+            </div>
+            <div class="details">
+                <div class="audio-time">
+                    <span class="progressing">00:00</span>
+                    <span class="end-time">03:25</span>
+                </div>
+                <input type="range" id="seek-slider" max="100" value="0" name="" onchange="seekTo()">
+            </div>
 
-			<div class="details row">
-				<button class="btn prev" onclick="nextTrack()"><i class="fa-solid fa-backward-step"></i></button>
-				<button class="stop-button" onclick="playpauseTrack()"><i class="fa-solid fa-play"></i></button>
-				<button class="btn next" onclick="prevTrack()"><i class="fa-solid fa-forward-step"></i></button>
-			</div>
-		</div>
+            <div class="details row">
+                <button class="btn prev" onclick="nextTrack()"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="stop-button" onclick="playpauseTrack()"><i class="fa-solid fa-play"></i></button>
+                <button class="btn next" onclick="prevTrack()"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+        </div>
     </div>
 
 
-    <script type="text/javascript" src="ls.js"></script>
+    <script type="text/javascript" src="js/ls.js"></script>
 
     <script src="script.js"></script>
 </body>
